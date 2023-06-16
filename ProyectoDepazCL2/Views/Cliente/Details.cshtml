@@ -1,0 +1,58 @@
+﻿@model ProyectoDepazCL2.Models.Cliente
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Cliente</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IdCliente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdCliente)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NombreCia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NombreCia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Direccion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Direccion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Idpais)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Idpais)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Telefono)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Telefono)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Actualizar", "Edit", new {  id = Model.IdCliente}, new {@class = "btn btn-success"}) |
+    @Html.ActionLink("Ver Categorias", "Index", null, new {@class = "btn btn-warning"})
+</p>
